@@ -1,0 +1,28 @@
+# An example config file used by Netlify CMS to customize the editorial workflow
+#
+# This file is included as an asset in our angular.json file similar to styles.css (for example) and
+# required by the admin page to exist in our compiled output of static pages.
+
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to main)
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "apps/confident-real-estate/content" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Publish Date", name: "publishDate", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+      - { label: "Time to read (minutes)", name: "timeToRead", widget: "number", default: 5 }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Post Preview Image", name: "postPreviewImage", widget: "image" }
+      - { label: "Author Profile Image", name: "authorProfileImage", widget: "image" }
+
+media_folder: "assets/blog" # Folder where user uploaded files should go

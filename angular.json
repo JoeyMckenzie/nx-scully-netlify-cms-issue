@@ -19,7 +19,8 @@
             "aot": true,
             "assets": [
               "apps/nx-scully-issue/src/favicon.ico",
-              "apps/nx-scully-issue/src/assets"
+              "apps/nx-scully-issue/src/assets",
+              "apps/nx-scully-issue/src/config.yml"
             ],
             "styles": ["apps/nx-scully-issue/src/styles.css"],
             "scripts": []

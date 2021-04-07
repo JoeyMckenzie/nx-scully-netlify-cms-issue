@@ -1,0 +1,15 @@
+No configuration for route "/blog/:blog" found. Skipping
+No configuration for route "/blog/:blog" found. Skipping
+No configuration for route "/blog/:blog" found. Skipping
+No configuration for route "/blog/:blog" found. Skipping
+No configuration for route "/blog/:blog" found. Skipping
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/test"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/test"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      

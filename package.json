@@ -8,6 +8,7 @@
     "nx": "nx",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod:nx-scully-issue": "ng build --prod --project=nx-scully-issue && npx scully --project nx-scully-issue --scanRoutes",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
@@ -25,11 +26,12 @@
     "update": "ng update @nrwl/workspace",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "scully": "npx scully --",
+    "scully:serve": "npx scully serve --"
   },
   "private": true,
   "dependencies": {
-    "@nrwl/angular": "10.2.0",
     "@angular/animations": "^10.0.0",
     "@angular/common": "^10.0.0",
     "@angular/compiler": "^10.0.0",
@@ -38,6 +40,10 @@
     "@angular/platform-browser": "^10.0.0",
     "@angular/platform-browser-dynamic": "^10.0.0",
     "@angular/router": "^10.0.0",
+    "@nrwl/angular": "10.2.0",
+    "@scullyio/init": "^1.1.3",
+    "@scullyio/ng-lib": "^1.0.0",
+    "@scullyio/scully": "^1.0.0",
     "rxjs": "~6.5.5",
     "zone.js": "^0.10.2"
   },
