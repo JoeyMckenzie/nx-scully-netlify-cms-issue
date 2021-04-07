@@ -1,4 +1,5 @@
 import { ScullyConfig } from '@scullyio/scully';
+
 export const config: ScullyConfig = {
   projectRoot: "./apps/nx-scully-issue/src",
   projectName: "nx-scully-issue",
